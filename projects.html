@@ -2,6 +2,7 @@
 <html>
     <head>
       <title>Jamaleh Gyulay</title>
+      <link href='https://fonts.googleapis.com/css?family=Quando|Judson:400,700,400italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -10,50 +11,62 @@
     </head>
     <body>
       <header>
-        <div class="container">
-          <h1 class="logo"><a href="index.html">Jamaleh Gyulay</a></h1>
-          <nav>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="resume.html">Resume</a></li>
+        <div class='navbar navbar-static-top'>
+          <div class='container' role='navigation'>
+            <div class='navbar-header'>
+              <a href='index.html' class='navbar-brand'>Jamaleh Gyulay</a>
+
+              <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+              </button>
+            </div>
+
+            <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+              <li><a href='about.html'>About</a></li>
+              <li><a href='projects.html'>Projects</a></li>
+              <li><a href='resume.html'>Resume</a></li>
             </ul>
-          </nav>
+          </div>
         </div>
       </header>
-      <section class="tagline">
+      <section>
         <h2>Projects</h2>
       </section>
 
       <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
+        <div class="container">
+          <h1 id="heading">All Projects</h1>
+          <ul id="gallery">
+            <li><a href="https://jamaleh-bloccit.herokuapp.com/" data-lightbox="projects" data-title="Bloccit" data-desc="My first project with Bloc was a Reddit copy. We used Bloccit as a way to learn a lot about the features of Rails, including MVC, gems, and Bootstrap."><img src="images/bloccit.png"></a></li>
+
+            <li><a href="http://jamaleh-blocipedia.herokuapp.com/" target="_blank" data-lightbox="projects" data-title="Blocipedia" data-desc="Blocipedia is a great way to collaborate on community-sourced content. Users can make wikis for fun or for work, private or public, with collaborators or as individuals!"><img src="images/blocipedia.png"></a></li>
+
+            <li><a href="https://jamaleh-blocitoff.herokuapp.com/" data-lightbox="projects" data-title="Blocitoff" data-desc="A self destructing TODO list to help users get the important things done."><img src="images/blocitoff.png"></a></li>
+
+            <li><a href="https://jametrics.herokuapp.com/" data-lightbox="projects" data-title="Jametrics" data-desc="An analytics service and reporting tool that you can use with web apps to track user activity and report results."><img src="images/blocmetrics.png"></a></li>
+
+            <li><a href="https://jamarks.herokuapp.com/" data-lightbox="projects" data-title="Jamarks" data-desc="A bookmarking site that lets users save and like their favorite websites. Users can add bookmarks from the website or email the URL and it will be added to Jamarks."><img src="images/jamarks.png"></a></li>
+
+            <li><a href="https://my-daily-readings.herokuapp.com/" data-lightbox="projects" data-title="Pray.Meditate.Reflect" data-desc="I made this web app for my capstone project with Bloc. This simple application allows users to read sacred writing, meditate upon them and write reflections about them. Users are also able to save their favorites and use links to memorize or find prayers."><img src="images/pray.png"></a></li>
+          </ul>
+        </div>
 
       </section>
-      <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
+      
 
-      </section>
-      <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
-
-      </section>
-      <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
-
-      </section>
-      <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
-
-      </section>
-      <section>
-        <img src="images/jamaleh.jpg" alt="profile pic">
-
-      </section>
       <footer>
         <p>Copyright &copy; 2015, All Rights Reserved</p>
         <a href="https://twitter.com/jamalehg" target="_blank"><i class="fa fa-twitter"></i></a>
         <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/in/jamalehgyulay" target="_blank"><i class="fa fa-linkedin"></i></a>
       </footer>
+
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
     </body>
 </html>

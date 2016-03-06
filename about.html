@@ -2,6 +2,7 @@
 <html>
     <head>
       <title>Jamaleh Gyulay</title>
+      <link href='https://fonts.googleapis.com/css?family=Quando|Judson:400,700,400italic' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -10,16 +11,26 @@
     </head>
     <body>
       <header>
-        <div class="container">
-          <h1 class="logo"><a href="index.html">Jamaleh Gyulay</a></h1>
-          <nav>
-            <ul>
-              <li><a href="about.html">About</a></li>
-              <li><a href="projects.html">Projects</a></li>
-              <li><a href="resume.html">Resume</a></li>
-            </ul>
-          </nav>
+        <div class='navbar navbar-static-top'>
+      <div class='container' role='navigation'>
+        <div class='navbar-header'>
+          <a href='index.html' class='navbar-brand'>Jamaleh Gyulay</a>
+
+          <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='.navbar-collapse'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
         </div>
+
+        <ul class='nav navbar-nav navbar-right collapse navbar-collapse'>
+          <li><a href='about.html'>About</a></li>
+          <li><a href='projects.html'>Projects</a></li>
+          <li><a href='resume.html'>Resume</a></li>
+        </ul>
+      </div>
+    </div>
       </header>
       <section class="tagline">
         <h2>About Me</h2>
@@ -40,5 +51,11 @@
         <a href="https://github.com/jamaleh1111" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/in/jamalehgyulay" target="_blank"><i class="fa fa-linkedin"></i></a>
       </footer>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
     </body>
 </html>
