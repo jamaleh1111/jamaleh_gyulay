@@ -1,4 +1,4 @@
-$(document).ready(function) {
+$(document).ready(function() {
 //mouse enter overlay
   $('ul#gallery li').on('mouseenter', function() {
     //get data attribute values
@@ -33,5 +33,4 @@ $(document).ready(function) {
     overlay.fadeOut(500);
   });
 });
-  }
-}
+  
